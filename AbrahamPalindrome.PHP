@@ -30,7 +30,7 @@ reference: https://www.w3schools.com/php/php_regex.asp
             "A man, a plan, a canal, Panama!",
             "deified",
             "hello",
-            "openai",
+            "nomore",
             "programming"
         ];
 
