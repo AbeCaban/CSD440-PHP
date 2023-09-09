@@ -5,30 +5,34 @@
 </head>
 <body>
     <h1>Data Entry Form</h1>
-    <form action="process.php" method="post">
-        <label for="integerField">Integer Field:</label>
-        <input type="number" id="integerField" name="integerField" required><br><br>
+    <form action="AbrahamProcess.php" method="post">
+        <label for="field1">Enter a String:</label>
+        <input type="text" id="field1" name="field1" required>
+        <input type="hidden" name="field1_type" value="string"><br><br>
 
-        <label for="floatField">Float Field:</label>
-        <input type="number" id="floatField" name="floatField" step="0.01" required><br><br>
+        <label for="field2">Enter an Integer:</label>
+        <input type="text" id="field2" name="field2" required>
+        <input type="hidden" name="field2_type" value="integer"><br><br>
 
-        <label for="stringField">String Field:</label>
-        <input type="text" id="stringField" name="stringField" required><br><br>
+        <label for="field3">Enter a Float:</label>
+        <input type="text" id="field3" name="field3" required>
+        <input type="hidden" name="field3_type" value="float"><br><br>
 
-        <label for="booleanField">Boolean Field:</label>
-        <select id="booleanField" name="booleanField" required>
-            <option value="true">True</option>
-            <option value="false">False</option>
-        </select><br><br>
+        <label for="field4">Enter "true" or "false":</label>
+        <input type="text" id="field4" name="field4" required>
+        <input type="hidden" name="field4_type" value="boolean"><br><br>
 
-        <label for="stringField2">Another String Field:</label>
-        <input type="text" id="stringField2" name="stringField2" required><br><br>
+        <label for="field5">Enter a String:</label>
+        <input type="text" id="field5" name="field5" required>
+        <input type="hidden" name="field5_type" value="string"><br><br>
 
-        <label for="integerField2">Another Integer Field:</label>
-        <input type="number" id="integerField2" name="integerField2" required><br><br>
+        <label for="field6">Enter a Integer:</label>
+        <input type="text" id="field6" name="field6" required>
+        <input type="hidden" name="field6_type" value="integer"><br><br>
 
-        <label for="floatField2">Another Float Field:</label>
-        <input type="number" id="floatField2" name="floatField2" step="0.01" required><br><br>
+        <label for="field7">Enter a Float:</label>
+        <input type="text" id="field7" name="field7" required>
+        <input type="hidden" name="field7_type" value="float"><br><br>
 
         <input type="submit" value="Submit">
     </form>

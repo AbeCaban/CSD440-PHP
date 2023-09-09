@@ -1,47 +1,50 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $age = $_POST["age"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $date = $_POST["date"];
-    $gender = $_POST["gender"];
-    $subscribe = isset($_POST["subscribe"]) ? "Yes" : "No";
+    $fields = [
+        "field1" => $_POST["field1"],
+        "field2" => $_POST["field2"],
+        "field3" => $_POST["field3"],
+        "field4" => $_POST["field4"],
+        "field5" => $_POST["field5"],
+        "field6" => $_POST["field6"],
+        "field7" => $_POST["field7"]
+    ];
 
-    // Validate data
     $valid = true;
 
-    // Check if all fields are populated
-    if (empty($name) || empty($age) || empty($email) || empty($phone) || empty($date) || empty($gender)) {
-        $valid = false;
-    }
-
-    // Check age is a positive integer
-    if (!is_numeric($age) || $age <= 0 || strpos($age, '.') !== false) {
-        $valid = false;
-    }
-
-    // Check email format
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $valid = false;
-    }
-
-    // Check phone format (10 digits)
-    if (!preg_match("/^\d{10}$/", $phone)) {
-        $valid = false;
-    }
-
-    // Check if the float has a decimal point
-    $floatField = $_POST["floatField"];
-    if (!is_numeric($floatField) || strpos($floatField, '.') === false) {
-        $valid = false;
+    foreach ($fields as $fieldName => $fieldValue) {
+        $expectedType = $_POST[$fieldName . "_type"];
+        
+        // Validate based on expected data type
+        switch ($expectedType) {
+            case "string":
+                if (!is_string($fieldValue)) {
+                    $valid = false;
+                }
+                break;
+            case "integer":
+                if (!is_numeric($fieldValue) || strpos($fieldValue, '.') !== false || intval($fieldValue) != $fieldValue) {
+                    $valid = false;
+                }
+                break;
+            case "float":
+                if (!is_numeric($fieldValue) || strpos($fieldValue, '.') === false) {
+                    $valid = false;
+                }
+                break;
+            case "boolean":
+                if ($fieldValue !== "true" && $fieldValue !== "false") {
+                    $valid = false;
+                }
+                break;
+        }
     }
 
     if ($valid) {
-        header("Location: AbrahamSuccess.html"); // Redirect to success page
+        header("Location: success.html"); // Redirect to success page
         exit();
     } else {
-        header("Location: AbrahamError.html"); // Redirect to error page
+        header("Location: error.html"); // Redirect to error page
         exit();
     }
 }
