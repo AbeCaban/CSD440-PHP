@@ -41,10 +41,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($valid) {
-        header("Location: success.html"); // Redirect to success page
+        header("Location: AbrahamSuccess.html"); // Redirect to success page
         exit();
     } else {
-        header("Location: error.html"); // Redirect to error page
+        header("Location: AbrahamError.html"); // Redirect to error page
         exit();
     }
 }
