@@ -1,3 +1,4 @@
+<!-- This is a PHP script to connect to a database and creates a table -->
 <!-- Author: Abraham Caban Rios -->
 <!-- Module: 8 -->
 <!-- Date: 9/15/2023 -->
