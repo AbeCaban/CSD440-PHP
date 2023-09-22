@@ -144,11 +144,11 @@ if (isset($_POST['submit'])) {
         <?php
 } else {
 ?>
-    <p>No heroes found.</p>
+    <p>No new heroes found.</p>
 <?php
 }
 ?>
-    <a href="AbrahamDisplaySelectedHero.php">Back to Hero Selection</a>
+    <a href="AbrahamQueri.php">Back to Hero Selection</a>
     <p><a href="index.php">Home page</a></p>
 </body>
 

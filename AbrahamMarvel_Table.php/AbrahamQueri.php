@@ -108,5 +108,6 @@
     }
     ?>
     <p><a href="index.php">Home page</a></p>
+    <p><a href="AbrahamForm.php">Add Hero</a></p>
 </body>
 </html>

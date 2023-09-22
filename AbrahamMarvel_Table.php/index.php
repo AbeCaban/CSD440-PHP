@@ -70,8 +70,8 @@
     }
     ?>
     <!-- Links to other PHP pages -->
-    <p><a href="AbrahamDisplaySelectedHero.php">Display Selected Hero</a></p>
-    <p><a href="AbrahamAddHerro.php">Add Hero</a></p>
+    <p><a href="AbrahamQueri.php">Display Selected Hero</a></p>
+    <p><a href="AbrahamForm.php">Add Hero</a></p>
 </body>
 
 </html>
