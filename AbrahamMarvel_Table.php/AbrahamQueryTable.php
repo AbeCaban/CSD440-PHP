@@ -1,7 +1,7 @@
-<!-- Author: Abraham Caban Rios 
-This code sets up a database connection and provides a function to query and retrieve data from the 'marvel_characters' table in the database.-->
-<!-- Module: 8 -->
-<!-- Date: 9/15/2023 -->
+<!-- This code sets up a database connection and provides a function to query and retrieve data from the 'marvel_characters' table in the database.-->
+<!-- Author: Abraham Caban Rios -->
+<!-- Module: 9 -->
+<!-- Date: 9/24/2023 -->
 
 <?php
 

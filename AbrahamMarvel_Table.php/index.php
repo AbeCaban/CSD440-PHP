@@ -1,7 +1,6 @@
-
 <!-- Author: Abraham Caban Rios -->
-<!-- Module: 8 -->
-<!-- Date: 9/15/2023 -->
+<!-- Module: 9 -->
+<!-- Date: 9/24/2023 -->
 
 <!DOCTYPE html>
 <html>
@@ -12,13 +11,15 @@
 
 <body>
     <h1>Marvel Heroes</h1>
-    
+
     <!-- A form to trigger the display of heroes -->
     <form method="POST">
         <button type="submit" name="show_heroes">Show Heroes</button>
     </form>
 
+
     <?php
+
     // Check if the 'show_heroes' button was clicked
     if (isset($_POST['show_heroes'])) {
 
@@ -37,6 +38,7 @@
     // Check if heroes data exists and is not empty
     if (isset($heroes) && !empty($heroes)) {
     ?>
+
         <!-- Display heroes in a table -->
         <table border='1'>
             <tr>
@@ -64,9 +66,12 @@
     <?php
     } else {
         // Display a message if there are no heroes or the "Show Heroes" button hasn't been pressed yet
-        echo "Please press the 'Show Heroes' button to display heroes.";
+        echo "Please press the 'Show Heroes' button to refresh the database table and display the original set of heroes.";
     }
     ?>
+    <!-- Links to other PHP pages -->
+    <p><a href="AbrahamDisplaySelectedHero.php">Display Selected Hero</a></p>
+    <p><a href="AbrahamAddHerro.php">Add Hero</a></p>
 </body>
 
 </html>

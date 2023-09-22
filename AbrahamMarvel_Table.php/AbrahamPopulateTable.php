@@ -1,7 +1,7 @@
 <!-- This is a PHP script to connect to a database and populates a table -->
 <!-- Author: Abraham Caban Rios -->
-<!-- Module: 8 -->
-<!-- Date: 9/15/2023 -->
+<!-- Module: 9 -->
+<!-- Date: 9/24/2023 -->
 
 <?php
 
