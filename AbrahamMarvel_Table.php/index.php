@@ -1,4 +1,4 @@
-<!-- Author: Abraham Caban Rios -->
+<!-- This is a index.php page that uses other .php scripts to edit the database. -->
 <!-- Author: Abraham Caban Rios -->
 <!-- Module: 9 -->
 <!-- Date: 9/24/2023 -->

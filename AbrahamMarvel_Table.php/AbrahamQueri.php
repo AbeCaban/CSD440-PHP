@@ -1,3 +1,4 @@
+<!-- This is a Web page that uses PHP to ask the user wich hero they want to see the characteristics of. -->
 <!-- Author: Abraham Caban Rios -->
 <!-- Module: 9 -->
 <!-- Date: 9/24/2023 -->
