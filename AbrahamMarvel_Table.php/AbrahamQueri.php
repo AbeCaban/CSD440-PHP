@@ -6,6 +6,26 @@
 <html>
 <head>
     <title>Select a Hero</title>
+    <style>
+        /* Add styles for the form */
+        form {
+            text-align: center; /* Center-align the form */
+        }
+
+        label {
+            display: block; /* Display labels in a block format */
+            margin-bottom: 10px; /* Add spacing between labels and select box */
+        }
+
+        select {
+            width: 200px; /* Adjust the width as needed */
+            margin-bottom: 10px; /* Add spacing between select box and button */
+        }
+
+        input[type="submit"] {
+            width: 200px; /* Adjust the width as needed */
+        }
+    </style>
 </head>
 <body>
     <h1>Select a Hero</h1>
