@@ -6,6 +6,9 @@ the program uses the function json_encode to encode your data into a JSON format
 Then, in the return, it displays the data in the JSON format, if not filled correctly it will return an error.-->
 
 <?php
+// Initialize $json_data as false by default
+$json_data = false;
+
 // Check if the HTTP request method is POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Initialize an array to store favorite heroes
@@ -36,8 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (count($favorite_heroes) >= 1) {
         // Encode favorite heroes into JSON format with pretty printing
         $json_data = json_encode($favorite_heroes, JSON_PRETTY_PRINT);
-    } else {
-        $json_data = false;
     }
 }
 ?>
@@ -47,6 +48,62 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Favorite Heroes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e8e8; /* Light blue-gray background */
+            color: #333; /* Dark gray text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #0066cc; /* Deep blue header text color */
+        }
+
+        pre {
+            background-color: #f0f8ff; /* Light pastel blue for JSON data */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        form {
+            background-color: #fff; /* White background for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #0066cc; /* Deep blue label text color */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #0066cc; /* Deep blue submit button color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004499; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
     <?php
@@ -80,3 +137,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 </body>
 </html>
+
