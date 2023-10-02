@@ -73,6 +73,7 @@
     <!-- Links to other PHP pages -->
     <p><a href="AbrahamQueri.php">Display Selected Hero</a></p>
     <p><a href="AbrahamForm.php">Add Hero</a></p>
+    <p><a href="AbrahamPDF.php">Get Hero List in PDF</a></p>
 </body>
 
 </html>
